@@ -2,3 +2,11 @@
 layout: default
 ---
 <h2>Novidades</h2>
+<ul>
+{% for news in site.categories.news limit:1 %}
+    <li>
+        <a href="">{{news.title}}</a>
+        <p>{{ news.meta }}</p>
+    </li>
+{% endfor %}
+</ul>

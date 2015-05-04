@@ -4,18 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Os Planetas do Universo</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{ site.baserul }}/css/common.css">
 </head>
 <body>
-    <header>
-        <h1>Planetas do Universo</h1>
-        <nav>
-            <ul>
-                <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-                <li><a href="{{site.baseurl}}/news.html">Novidades</a></li>
-            </ul>
-        </nav>
-    </header>
-    {{ content }}
+    <div class="container">
+        <header>
+            <h1>Planetas do Universo</h1>
+            {% include nav.html  navclass='nav-pills' %}
+        </header>
+        {{ content }}
+        <footer>
+            {% include nav.html navclass='nav-justified' %}
+            <p>2015 - Planetas do Universo</p>
+        </footer>
+
+    </div>
 </body>
 </html>
