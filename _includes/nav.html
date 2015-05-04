@@ -1,0 +1,7 @@
+<nav>
+<ul class="nav {{ include.navclass }}">
+        <li role="presentation" class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{site.baseurl}}/index.html">Home</a></li>
+        <li role="presentation" class="{% if page.url == '/planetas.html' %}active{% endif %}"><a href="{{site.baseurl}}/index.html">Planetas</a></li>
+        <li role="presentation" class="{% if page.url == '/news.html' %}active{% endif %}"><a href="{{site.baseurl}}/news.html">Novidades</a></li>
+    </ul>
+</nav>
