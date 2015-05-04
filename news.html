@@ -3,9 +3,9 @@ layout: default
 ---
 <h2>Novidades</h2>
 <ul>
-{% for news in site.categories.news limit:1 %}
+{% for news in site.posts %}
     <li>
-        <a href="">{{news.title}}</a>
+        <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
         <p>{{ news.meta }}</p>
     </li>
 {% endfor %}
